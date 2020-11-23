@@ -1,0 +1,515 @@
+/*General Styles*/
+breakpoint{
+max-width: 100%;
+display: inline-block;
+}
+html body{
+  width:100%; 
+  height:100%;
+  border:1;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+/*Modal Styles*/
+.extra-options{
+  margin: 0;
+  text-align: center;
+}
+
+#hint{
+  color: #016793a1;
+}
+
+#reset-pass-div{
+  display: none;
+}
+
+
+/*sm*/
+@media (min-width: 300px) {
+breakpoint{
+max-width: 25%;
+
+}
+.demo input[type="checkbox"] + label span{
+	display: inline-block;
+	width: 22px!important;
+	height: 22px!important;
+	margin: -1px 4px 0 0;
+	vertical-align: middle;
+	background: url(../img/checkbox-uncheck.png);
+	background-size: cover;
+	cursor: pointer;
+}
+.imagen-miscursos {
+  width: 100%;
+}
+.titulo{
+  font-family: Century Gothic;
+  font-weight: 900;
+  font-size: 50px!important;
+}
+.respons{
+  max-width: 300px!important;
+}
+/*acaba menu responsivo del contenido*/
+
+.bg-color-lista{
+  position:absolute; 
+  top:0px; 
+  height: 100%; 
+  background-color: rgb(250, 250, 250);
+}
+}
+/*iPhone X?*/
+@media (min-width: 375px) {
+  breakpoint{
+  max-width: 30%;
+  }
+  .demo input[type="checkbox"] + label span{
+    display: inline-block;
+    width: 22px!important;
+    height: 22px!important;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    background: url(../img/checkbox-uncheck.png);
+    background-size: cover;
+    cursor: pointer;
+  }
+.imagen-miscursos {
+  width: 100%;
+}
+.titulo{
+  font-family: Century Gothic;
+  font-weight: 900;
+  font-size: 50px!important;
+}
+.respons{
+  max-width: 375px!important;
+}
+/*acaba menu responsivo del contenido*/
+
+.bg-color-lista{
+  position:absolute; 
+  top:0px; 
+  height: 100%; 
+  background-color: rgb(250, 250, 250);;
+
+}
+}
+/*iPhone 6 Plus*/
+@media (min-width: 377px) {
+  breakpoint{
+    max-width: 45%;
+  }
+  .logo-responsive{
+    width: 80%;
+  }
+.imagen-miscursos {
+  width: 100%;
+}
+.titulo{
+  font-family: Century Gothic;
+  font-weight: 900;
+  font-size: 50px!important;
+}
+.respons{
+  max-width: 377px!important;
+}
+/*acaba menu responsivo del contenido*/
+
+.bg-color-lista{
+  position:absolute; 
+  top:0px; 
+  height: 100%; 
+  background-color: rgb(250, 250, 250);;
+}
+}
+/*md*/
+@media (min-width: 768px) {
+  breakpoint{
+    max-width: 60%;
+  }
+  .logo-responsive{
+    width: 80%;
+  }
+.imagen-miscursos {
+  width: 100%;
+}
+.titulo{
+  font-family: Century Gothic;
+  font-weight: 900;
+  font-size: 50px!important;
+}
+.respons{
+  max-width: 768px!important;
+}
+/*acaba menu responsivo del contenido*/
+
+.bg-color-lista{
+  position:absolute; 
+  top:0px; 
+  height: 100%; 
+  background-color: rgb(250, 250, 250);;
+
+  -webkit-box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
+}
+}
+/*lg*/
+@media (min-width: 992px) {
+  breakpoint{
+    max-width: 75%;
+  }
+  .demo input[type="checkbox"] + label span{
+    display: inline-block;
+    width: 17px!important;
+    height: 17px!important;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    background: url(../img/checkbox-uncheck.png);
+    background-size: cover;
+    cursor: pointer;
+  }
+.imagen-miscursos {
+  width: 100%;
+}
+.titulo{
+  font-family: Century Gothic;
+  font-weight: 900;
+  font-size: 60px!important;
+}
+.respons{
+  max-width: 992px!important;
+}
+/*acaba menu responsivo del contenido*/
+
+.bg-color-lista{
+  position:absolute; 
+  top:0px; 
+  height: 100%; 
+  background-color: rgb(250, 250, 250);;
+
+  -webkit-box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
+}
+}
+/*xl*/
+@media (min-width: 1448px) {
+  breakpoint{
+    max-width: 100%;
+  }
+}
+.titulo{
+  font-family: Century Gothic;
+  font-weight: 900;
+  font-size: 60px;
+}
+.margineado{
+  margin-bottom: 1500;
+}
+.respons{
+  max-width: 1200px!important;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes roll2 {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.animacion-flecha-abajo{
+  animation: roll 0.5s;
+}
+.animacion-flecha-izquierda{
+  animation: roll2 0.4s;
+}
+.h-scroll {
+  height: 20rem; 
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.c-scroll {
+  height: 10rem; 
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.cont-actividades{
+/*   border-top:solid 1px; 
+  border-color: rgb(220, 220, 220); */
+}
+.h-scroll-box {
+  height: 250px; 
+  overflow-y: scroll;
+  background: transparent;
+  width: auto;
+}
+@media (max-width: 768px) {
+  .logo-responsive{
+    display: none;
+  }
+  .nav-responsivo{
+    height: 1rem;
+  }
+}
+@media (max-width: 991px) {
+  .header-top{
+    height: 5rem;
+  }
+}
+
+@media (min-width: 350px) {
+  .box-responsiva{
+    max-height: 5%;
+    height: 5%;
+  }
+}
+
+.box-responsiva{
+  max-height: 5%;
+  height: 5%;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Poppins Thin'), local('Poppins-Thin'), url(https://fonts.gstatic.com/s/poppins/v9/pxiGyp8kv8JHgFVrLPTucXtAKPY.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+.bg-color{
+background-color: rgb(28, 28, 37);
+}
+.scroll{
+  overflow-y: scroll;
+  max-height: 30rem;
+  background-color: rgb(255, 255, 255);
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*menu responsivo del contenido*/
+.scrollmenu {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.scrollmenu li {
+  display: inline-block;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+/* estilo checkbox*/
+.demo input[type="checkbox"] {
+	display: none;
+}
+
+.demo input[type="checkbox"]:checked + label span{
+	background: url(../img/checkbox-check.png);
+	background-size: cover;
+}
+/*acaba estilo checkbox*/
+.tamaño{
+  width: 100%;
+}.font-actividades{
+  font-family: 'Poppins:100', sans-serif;
+  font-size: 16px; color: rgb(87, 87, 87);
+}
+.area-tareas{
+  background-color: rgb(255, 255, 255);
+}
+.sticky-aside{
+  position: -webkit-sticky; 
+ position: sticky;
+ top: 4rem;
+}
+.calificaciones{
+  width: 2.5rem;
+  padding: .5rem;
+  background-color: rgb(190, 255, 147);
+  border-radius: 2rem;
+}
+
+/* stylos estrellas*/
+.clasificacion input[type='radio'] {
+    opacity: 0;
+  }
+  .clasificacion label {
+    font-size: 50px;
+    color:rgb(150, 150, 150);
+    cursor: pointer;
+  }
+  .clasificacion label:hover {
+    color: rgb(217, 215, 11);
+  }
+   .activo + label{
+   color: rgb(255, 230, 0) !important;
+   }
+
+   .estado-activo{
+     color: blue;
+   }
+
+   .inter{
+     line-height: 5px;
+   }
+   .back-modal{
+     background-color: rgb(75, 75, 83)!important;
+   }
+   .over-bg{
+     height: 51rem;
+   }
+   .over-bg-xl{
+     height: 60rem;
+   }
+   .opciones-perfil{
+    width: 15rem;
+    
+   }
+   .enlaces-perfil{
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    
+ }
+   .enlaces-perfil:hover{
+     color: rgb(255, 115, 0);
+     text-decoration: none;
+     
+  }
+  .opciones-perfil-main{
+    margin-right: 8rem; 
+    padding: 2rem; 
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.164);
+   }
+   .enlaces-perfil-main{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    
+ }
+   .enlaces-perfil-main:hover{
+     color: rgb(255, 115, 0);
+     text-decoration: none;
+     
+  }
+  .checked-2{
+    color: yellow!important;
+  }
+  .boton-compra{
+      background: #eaebec;
+
+  }
+  .div-precio{
+    background: #eaebec;
+
+}
+
+  .color-contenido{
+    background-color: rgba(0, 0, 0, 0.26); 
+    
+  }
+  .color-intro{
+    background-color: #016793de;
+  }
+  .color-Examen-enabled{
+    background-color: #016793c2;
+  }
+  .color-Bloque-enabled{
+    background-color: #016793a1;
+  }
+.temas-hover:hover{
+  background-color: #75c3e47a;
+}
+
+.border-comentario{
+  border: 1px solid rgb(122, 122, 122);
+  border-radius: 2px;
+  border-bottom: 1px solid rgb(145, 143, 143);
+}
+.nav-style{
+  margin-bottom: 0;
+  -webkit-box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
+}
+.area-comentarios{
+  max-height: 25rem;
+   height: 45rem;
+   border-radius: 5px;
+   margin-bottom: 1rem;
+}
+.hover-boton:hover{
+  background-color: #858888;
+}
+.nav>li>a:focus, .nav>li>a:hover, .nav>li>a:active {
+  text-decoration: none;
+  background-color:rgb(217, 236, 232);
+  
+}
+.boton-tarea{
+  -webkit-box-shadow: 0px 0px 9px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 9px -2px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 9px -2px rgba(0,0,0,0.75);
+border-radius:5px;
+ padding: 0;
+ color:#016793a1;
+ max-width: 11rem;
+ height: 3rem;
+}
+.boton-tarea:hover{
+  background-color: rgb(11,184,155);
+  color: white;
+}
+
+a:focus{
+  color: rgb(255, 94, 0)!important;
+}
+
+.bg-color-desabilitado{
+  background-color: rgba(165, 165, 165, 0.438)!important;
+} 
+.item
+{
+    position: relative;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.item:hover
+{
+    transform: scale(1.02);
+
+}
+.item-comprar
+{
+    position: relative;
+    display: inline-block;
+    transition: all 0.1s ease;
+}
+
+.item-comprar:hover
+{
+    transform: scale(1.05);
+
+}

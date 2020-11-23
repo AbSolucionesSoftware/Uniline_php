@@ -1,0 +1,304 @@
+.load-picture{
+    margin-left: 50px!important; 
+    
+}
+#cargaFoto{
+    margin-left: -20px!important;
+}
+#actualizar{
+    width: 100%;
+}
+.footer-only a{
+    text-decoration: none;
+}
+.footer-only a:hover{
+    color: yellow!important;
+}
+.facebook:hover{
+    background-color: rgba(255, 255, 255, 0.822);
+}
+.facebook:hover p{
+    color: black;
+    text-decoration: none;
+}
+.whatsapp:hover{
+    background-color: rgba(255, 255, 255, 0.836);
+}
+.whatsapp:hover p{
+    color: black;
+}
+.whatsapp:hover i{
+    color: black;
+}
+.clock li a i:hover{
+    color: gold;
+}
+.social-network a i:hover{
+    color: rgba(7, 143, 255, 0.815);
+}
+#imagen-perfil img{
+    width: 30%;
+}
+/*sm*/
+@media (min-width: 300px) {
+    .load-picture{
+        margin-left: 13px!important;
+        margin-bottom: 20px;
+    }
+    /* Modal responsivo */
+    .responsive-video{
+        width: 290px!important;
+        height: 165px!important;
+    }
+    .title-responsive{
+        width: 290px!important;
+        text-align: center;
+
+    }
+    .cont-curso-responsive{
+        margin-left: 35px!important;
+        text-align: center;
+    }
+    .margin-responsive{
+        margin-left: 0px!important;
+    }
+    .temas-curso-responsive{
+        width: 290px!important;
+        text-align: center!important;
+    }
+    .botton-responsive{
+        width: 100%!important;
+        border-color: white!important;
+    }
+    }
+    @media (min-width: 359px) {
+        .load-picture{
+            margin-left: 30px!important;
+            margin-bottom: 20px;
+        }
+        #cargaFoto{
+            width: 100%;
+            height: 100%;
+        }
+        /* imagenes de los cursos */
+        .responsive-image{
+            width: 100%!important;
+            height: 100%!important; 
+        }
+        /* Modal responsivo */
+        .responsive-video{
+            width: 330px!important;
+            height: 165px!important;
+        }
+        .title-responsive{
+            width: 330px!important;
+            text-align: center;
+
+        }
+        .cont-curso-responsive{
+            margin-left: 55px!important;
+            text-align: center;
+        }
+        .temas-curso-responsive{
+            width: 330px!important;
+            text-align: center!important;
+        }
+        .botton-responsive{
+            width: 100%!important;
+            border-color: white!important;
+        }
+
+        }
+    /*iPhone X?*/
+    @media (min-width: 375px) {
+        .load-picture{
+            margin-left: 30px!important; 
+        }
+        /* Ver mas de los cursos vinculo a modal */
+        .more-cursos-responsive{
+            font-size: 25px!important;
+        }
+        /* Modal responsivo */
+        .responsive-video{
+            width: 340px!important;
+            height: 165px!important;
+        }
+        .title-responsive{
+            width: 340px!important;
+            text-align: center;
+
+        }
+        .cont-curso-responsive{
+            margin-left: 60px!important;
+            text-align: center;
+        }
+        .margin-responsive{
+            margin-left: 0px!important;
+        }
+        .temas-curso-responsive{
+            width: 340px!important;
+            text-align: center!important;
+        }
+        .botton-responsive{
+            width: 100%!important;
+            border-color: white!important;
+        }
+    }
+    /*iPhone 6 Plus*/
+    @media (min-width: 377px) {
+        .load-picture{
+            margin-left: 60px!important; 
+        }
+        /* Modal responsivo */
+        .responsive-video{
+            width: 380px!important;
+            height: 185px!important;
+        }
+        .title-responsive{
+            width: 380px!important;
+
+        }
+        .cont-curso-responsive{
+            margin-left: 75px!important;
+            text-align: center;
+        }
+        .temas-curso-responsive{
+            width: 380px!important;
+        }
+        .botton-responsive{
+            width: 100%!important;
+            border-color: white!important;
+        }
+    }
+    /*md*/
+    @media (min-width: 767px) {
+        .load-picture div img{
+            width: 400px;
+            height: 400px;
+        }
+        .load-picture{
+            margin-left: 130px!important; 
+        }
+        #cargaFoto{
+            margin-left: -60px!important;
+        }
+        #imagen-perfil img{
+            width: 100%;
+        }
+        /* Ver mas de los cursos vinculo a modal */
+        .more-cursos-responsive{
+            font-size: 30px!important;
+        }
+        /* Modal responsivo */
+        .responsive-video{
+            width: 460px!important;
+            height: 165px!important;
+        }
+        .title-responsive{
+            width: 460px!important;
+            text-align: center;
+
+        }
+        .cont-curso-responsive{
+            margin-left: 120px!important;
+            text-align: center;
+        }
+        .temas-curso-responsive{
+            width: 460px!important;
+            text-align: center!important;
+        }
+        .botton-responsive{
+            width: 100%!important;
+            border-color: white!important;
+        }
+    }
+    /*lg*/
+    @media (min-width: 992px) {
+      breakpoint{
+        max-width: 75%;
+      }
+      .load-picture div img{
+        width: 260px;
+        height: 260px;
+    }
+    .load-picture{
+        padding-left: 0px!important; 
+    }
+    #cargaFoto{
+        margin-left: 0px!important;
+    }
+    #imagen-perfil img{
+        width: 30%;
+    }
+    }
+
+    @media (min-width: 1024px) {
+        #imagen-perfil img{
+            width: 23%;
+        }
+        /* Ver mas de los cursos vinculo a modal */
+        .more-cursos-responsive{
+            font-size: 20px!important;
+        }
+        /* Modal responsivo */
+        .responsive-video{
+            width: 775px!important;
+            height: 355px!important;
+        }
+        .title-responsive{
+            width: 775px!important;
+            text-align: left!important;
+
+        }
+        .cont-curso-responsive{
+            margin-left: 280px!important;
+            text-align: center;
+        }
+        .margin-responsive{
+            margin-left: 5px!important;
+        }
+        .temas-curso-responsive{
+            width: 775px!important;
+            text-align: center!important;
+        }
+        .botton-responsive{
+            width: 100%!important;
+            border-color: white!important;
+        }
+      }
+    /*xl*/
+    @media (min-width: 1200px) {
+        /* Ver mas de los cursos vinculo a modal */
+        .more-cursos-responsive{
+            font-size: 17px!important;
+        }
+        .responsive-image{
+            width:250px!important;
+            height:200px!important;
+        }
+        /* Modal responsivo */
+        .responsive-video{
+            width: 775px!important;
+            height: 255px!important;
+        }
+        .title-responsive{
+            width: 775px!important;
+            text-align: left!important;
+
+        }
+        .cont-curso-responsive{
+            margin-left: 280px!important;
+            text-align: left!important;
+        }
+        .margin-responsive{
+            margin-left: 8px!important;
+        }
+        .temas-curso-responsive{
+            text-align: left!important;
+        }
+        .botton-responsive{
+            width: 100%!important;
+            border-color: white!important;
+            font-size: 17px!important;
+        }
+    }
