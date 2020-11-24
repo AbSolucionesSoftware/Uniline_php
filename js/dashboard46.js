@@ -379,6 +379,7 @@ template_cometarios +=`
             success: function (response) {
                 //console.log(response);
                 datos = JSON.parse(response)
+                console.log(datos);
     template = `
                 <div style="margin-top: 0rem; background-color:  #5ca8ff;">
                     <h4 style="padding: 1rem;" class="h4 text-center widget_title text-white">Contenido del curso</h4>
