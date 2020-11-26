@@ -118,17 +118,15 @@ $pagina = "mainpage";
 
   <div id="all-cursos" class="popular">
     <div class="container">
-      <div class="row">
-        <div class="col text-center">
-          <p class="h1" style="font-weight: bold;">Nuestros cursos</p>
-        </div>
+      <div class="text-center">
+        <p class="h1" style="font-weight: bold;">Nuestros cursos</p>
       </div>
       <div class="cursos"></div>
     </div>
     <button id="date-modal" type="button" class="btn btn-info btn-lg d-none" data-toggle="modal" data-target="#modal-cursos"></button>
   </div>
 
-  <section class="dash-area" style="height: 250px;">
+  <!-- <section class="dash-area" style="height: 250px;">
     <div class="row overlay-bg p-0 px-md-5 px-sm-3" style="background: linear-gradient(transparent, rgba(0, 0, 0, 0.664));">
       <div class="col-lg-3 col-md-12 p-5 d-lg-block d-md-none d-none">
         <i style="font-size: 200px" class="fas fa-laptop-code text-white"></i>
@@ -161,7 +159,7 @@ $pagina = "mainpage";
         <p class="h3 text-white" style="text-shadow: 0.1em 0.1em 0.1em #000!important;">y comienza a disfrutar sus beneficios.</p>
       </div>
     </div>
-  </section>
+  </section> -->
 
 
 

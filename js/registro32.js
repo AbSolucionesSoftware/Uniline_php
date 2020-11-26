@@ -379,7 +379,7 @@ $(document).ready(function() {
     }
     pintarItems();
 
-    $(document).on('submit', '#FCupones', function(e) {
+    /* $(document).on('submit', '#FCupones', function(e) {
         e.preventDefault();
         if(sesion != "" ){
             if ($('#codigo').val().length != 0 && $('#curso').val().length != 0) {
@@ -399,5 +399,5 @@ $(document).ready(function() {
         }else{
             swal("Datos Incompletos", "Es necesario tener cuenta para realizar esta accion", "warning");
         }
-    })
+    }) */
 })
