@@ -145,8 +145,8 @@ $nombre = (sizeof($nombres_separados) > 2) ? $nombres_separados[0] . ' ' . $nomb
                                  <div class="custom-file" id="archivo-default">
                                     <input type="file" class="input-curso custom-file-input imagen" id="file-image-curso" name="imagen-curso">
                                     <label class="custom-file-label" for="file-image-curso" id="image-name-curso">Subir
-                                       Imagen del
-                                       Curso</label>
+                                       Imagen del Curso
+                                    </label>
                                  </div>
                               </div>
 

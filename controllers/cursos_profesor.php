@@ -24,6 +24,8 @@ switch($request) {
         $costo = $_POST['costo-curso'];
         $publicacion = 0;
         
+        echo $imagen;
+
         if ($imagen == "error al subir"){
             echo "Error";
         } else if ($imagen == "img no valida"){
