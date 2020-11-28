@@ -126,7 +126,7 @@ $pagina = "general";
                       <li class="nav-item no-padding">
                         <a id="nav-status" class="nav-link" data-toggle="tab" href="#descripcion">Descripción</a>
                       </li>
-                      <li class="nav-item no-padding">
+                      <li class="nav-item no-padding d-none">
                         <a class="nav-link" data-toggle="tab" href="#archivos">Recursos y Archivos</a>
                       </li>
                       <li class="nav-item no-padding">

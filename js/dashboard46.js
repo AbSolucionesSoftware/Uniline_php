@@ -460,12 +460,40 @@ template_cometarios +=`
                                     }else{
                                         control_seleccion = "disabled";
                                     }
-                                    template +=
-                                    `<div class="demo pt-1 m-0 flex align-items-center temas-hover border-bottom ${color_lista}">
-                                        <input class="" type="checkbox" id="customCheck-${(i+1)+"-"+(z+1)}" name="example1" ${control_seleccion}>
-                                        <label data-idtemabase="${datos[i][3][z][0]}" id="tema-${(i+1)+"-"+(z+1)}" for="customCheck-${(i+1)+"-"+(z+1)}" class="${control_del_chequeo} col-3 text-justify desbloqueo-${i} pl-4 flex align-items-center"><span class="registro_tema"></span></label>
-                                        <a id="${(i+1) +"-"+(z+1)}" class="col-9 mostrar-tema" style="${cursor_pointer_temas} font-family: 'Poppins:100', sans-serif; font-size: 14px; color: rgb(87, 87, 87);">${datos[i][3][z][1]}</a>
-                                     </div>`;  
+                                    console.log();
+                                    if(datos[i][3][z][4] !== ""){
+
+                                        datos_download = datos[i][3][z][4].split("/");
+                                        dat = datos_download[2];
+
+                                        template +=
+                                        `<div class="demo pt-1 m-0 flex align-items-center temas-hover border-bottom ${color_lista} row">
+                                            <div class="col-10" >
+                                                <input class="border" type="checkbox" id="customCheck-${(i+1)+"-"+(z+1)}" name="example1" ${control_seleccion}>
+                                                <label data-idtemabase="${datos[i][3][z][0]}" id="tema-${(i+1)+"-"+(z+1)}" for="customCheck-${(i+1)+"-"+(z+1)}" class="${control_del_chequeo} text-justify desbloqueo-${i}"><span class="registro_tema"></span></label>
+                                                <a id="${(i+1) +"-"+(z+1)}" class="col-9 mostrar-tema" style="${cursor_pointer_temas} font-family: 'Poppins:100', sans-serif; font-size: 14px; color: rgb(87, 87, 87);">${datos[i][3][z][1]}</a>
+                                            </div>
+                                            <div class="col-2">
+                                                <button class="float-right btn btn-outline-secondary boton-descarga">
+                                                    <a style="color: black" class="descarga" href="${datos[i][3][z][4]}" download="${dat}">
+                                                        Recursos
+                                                    </a>
+                                                </button>   
+                                            </div>
+                                        </div>
+                                        `; 
+                                    }else{
+                                        template +=
+                                        `<div class="demo pt-1 m-0 flex align-items-center temas-hover border-bottom ${color_lista} row">
+                                            <div class="col-10" >
+                                                <input class="border" type="checkbox" id="customCheck-${(i+1)+"-"+(z+1)}" name="example1" ${control_seleccion}>
+                                                <label data-idtemabase="${datos[i][3][z][0]}" id="tema-${(i+1)+"-"+(z+1)}" for="customCheck-${(i+1)+"-"+(z+1)}" class="${control_del_chequeo} text-justify desbloqueo-${i}"><span class="registro_tema"></span></label>
+                                                <a id="${(i+1) +"-"+(z+1)}" class="col-9 mostrar-tema" style="${cursor_pointer_temas} font-family: 'Poppins:100', sans-serif; font-size: 14px; color: rgb(87, 87, 87);">${datos[i][3][z][1]}</a>
+                                            </div>
+                                        </div>
+                                        `; 
+                                    }
+ 
                             }
                         }else if(y == 4){
                             for(z = 0; z< datos[i][4].length; z++){
@@ -557,10 +585,10 @@ template_cometarios +=`
                 datos_tema = JSON.parse(response);
                 //console.log(datos_tema);
                 if(datos_tema[0][3]){
-                datos_download = datos_tema[0][3].split("/");
-                dat = datos_download[2];
+                    datos_download = datos_tema[0][3].split("/");
+                    dat = datos_download[2];
                 }else{
-                dat = "no existe archivo";
+                    dat = "no existe archivo";
                 }
                 $('.descarga').attr("href",datos_tema[0][3]);
                                 template_video = `

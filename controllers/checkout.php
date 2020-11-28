@@ -46,14 +46,14 @@ if (!empty($_POST['idcurso'])) {
             'payment_method_types' => ['card'],
             'line_items' => [[
                 'name' => $nombre_curso,
-                'images' => ['https://www.escuelaalreves.com/img/' . 'res_'.$imagen],
+                'images' => ['https://www.cursosuniline.com/img/' . 'res_'.$imagen],
                 'amount' => $costo * 100,
                 'currency' => 'mxn',
                 'quantity' => 1,
             ]],
             'metadata' => ['idcurso' => $_POST['idcurso']], //poner el id del curso
-            'success_url' => 'https://www.escuelaalreves.com/views/success.php?session_id={CHECKOUT_SESSION_ID}',
-            'cancel_url' => 'https://www.escuelaalreves.com/views/failure.php?session_id=true',
+            'success_url' => 'https://www.cursosuniline.com/views/success.php?session_id={CHECKOUT_SESSION_ID}',
+            'cancel_url' => 'https://www.cursosuniline.com/views/failure.php?session_id=true',
         ]);
         echo $session->id;
     } else {

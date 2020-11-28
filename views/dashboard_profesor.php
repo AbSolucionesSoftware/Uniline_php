@@ -73,7 +73,7 @@ $nombre = (sizeof($nombres_separados) > 2) ? $nombres_separados[0] . ' ' . $nomb
                aria-controls="v-pills-ayuda" aria-selected="false">Ayuda</a> -->
             <br>
             <a class="nav-link" href="mainpage.php" aria-selected="false">Pagina principal</a>
-            <a class="nav-link" href="misCrusos" aria-selected="false">Mis cursos</a>
+            <a class="nav-link" href="misCursos.php" aria-selected="false">Mis cursos</a>
             <a class="nav-link" href="editProfile.php" aria-selected="false">Editar mi perfil</a>
             <a class="nav-link" href="../controllers/sesion-destroy.php?cerrar=true" aria-selected="false">Cerrar sesion</a>
          </div>
