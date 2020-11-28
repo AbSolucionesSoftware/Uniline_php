@@ -362,6 +362,10 @@ background-color: rgb(28, 28, 37);
  position: sticky;
  top: 4rem;
 }
+.sticky-descripcion{
+ position: sticky!important;
+ top: 6rem;
+}
 .calificaciones{
   width: 2.5rem;
   padding: .5rem;
