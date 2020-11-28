@@ -26,7 +26,7 @@ if(isset($_POST['TEmail']) && !empty($_POST['TPass']) && !empty($_POST['TNombre'
     $nombre = $_POST['TNombre'];
     $telefono = $_POST['TTelefono'];
     $vkey = $emailClass->setEmail($email);
-    $verificado = 0;
+    $verificado = 1;
     $encriptado = trim(password_hash($password,PASSWORD_DEFAULT));
 
     $conexion = new Modelos\Conexion();
@@ -63,8 +63,26 @@ if(isset($_POST['TEmail']) && !empty($_POST['TPass']) && !empty($_POST['TNombre'
              $datos_registro = array($nombre, $telefono, $email, $encriptado, $vkey, $verificado, 'Estudiante');
              $resultado = $conexion->consultaPreparada($datos_registro,$consulta_registro,1,'sssssis', false, 3);
              if($resultado == 1){
-             echo $resultado;
-             $enviar = $emailClass->enviarEmailConfirmacion($_POST['TNombre']);
+              
+              $consulta = "SELECT * FROM usuario WHERE email = ?";
+              $datos = array($email);
+              $resultado3 = json_encode($conexion->consultaPreparada($datos,$consulta,2,'s', false, null));
+              $result = json_decode($resultado3);
+
+              $_SESSION['acceso'] = $email;
+              $_SESSION['idusuario'] = $result[0][0];
+              $_SESSION['nombre'] = $result[0][1];
+              $_SESSION['emailusuario'] = $result[0][6];
+              $_SESSION['verificado'] = $result[0][9];
+              $_SESSION['tipo'] = $result[0][10];
+              $_SESSION['CEO'] = '';
+              if($result[0][4] != ""){
+                  $_SESSION['imagen_perfil'] = $result[0][4];
+              }else{
+                  $_SESSION['imagen_perfil'] = "../img/perfil.png";
+              }
+             echo "user";
+             //$enviar = $emailClass->enviarEmailConfirmacion($_POST['TNombre']);
              }else{
               echo 'errorpass';  
              }

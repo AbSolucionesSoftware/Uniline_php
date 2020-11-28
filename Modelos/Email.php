@@ -29,15 +29,15 @@ class Email
             $mail->isSMTP();                                            // Send using SMTP
             $mail->Host       = 'smtp.hostinger.mx';                    // Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-            $mail->Username   = 'correo_prueba_cafi@cursosuniline.com';               // SMTP username
-            $mail->Password   = '6&:MP6TZk|wD';                         // SMTP password
+            $mail->Username   = 'no-reply@cursosuniline.com';               // SMTP username
+            $mail->Password   = '5?GlBOe8Kqq';                         // SMTP password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
             $mail->Port       = 587;                                    // TCP port to connect to
 
             //Recipients
-            $mail->setFrom('correo_prueba_cafi@cursosuniline.com', 'Equipo de soporte UNILINE');
+            $mail->setFrom('no-reply@cursosuniline.com', 'Equipo de soporte UNILINE');
             $mail->addAddress($this->email);     // Add a recipient
-            $mail->addReplyTo('correo_prueba_cafi@cursosuniline.com', 'Equipo de soporte UNILINE');
+            $mail->addReplyTo('no-reply@cursosuniline.com', 'Equipo de soporte UNILINE');
 
             // Content
             $mail->isHTML(true);                                  // Set email format to HTML
@@ -85,15 +85,15 @@ class Email
             $mail->isSMTP();                                            // Send using SMTP
             $mail->Host       = 'smtp.hostinger.mx';                    // Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-            $mail->Username   = 'correo_prueba_cafi@cursosuniline.com';               // SMTP username
-            $mail->Password   = '6&:MP6TZk|wD';                         // SMTP password
+            $mail->Username   = 'no-reply@cursosuniline.com';               // SMTP username
+            $mail->Password   = '5?GlBOe8Kqq';                         // SMTP password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
             $mail->Port       = 587;                                    // TCP port to connect to
 
             //Recipients
-            $mail->setFrom('correo_prueba_cafi@cursosuniline.com', 'Equipo de soporte Uniline');
+            $mail->setFrom('no-reply@cursosuniline.com', 'Equipo de soporte Uniline');
             $mail->addAddress($this->email);     // Add a recipient
-            $mail->addReplyTo('correo_prueba_cafi@cursosuniline.com', 'Equipo de soporte Uniline');
+            $mail->addReplyTo('no-reply@cursosuniline.com', 'Equipo de soporte Uniline');
 
             // Content
             $mail->isHTML(true);                                  // Set email format to HTML

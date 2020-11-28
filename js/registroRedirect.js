@@ -57,7 +57,24 @@ $(document).ready(function () {
                     data: $("#registro").serialize(),
 
                     success: function (response) {
-                        $("#hope").addClass("d-none");
+                        switch (response) {
+                            case "user":
+                              window.location.replace('../views/misCursos.php');
+                              break;
+                            case "2":
+                              window.location.replace('../views/dashboard_profesor.php');
+                              break;
+                            case "NoVerificado":
+                              $('.alerta-login').html('<h2 class="alert alert-danger">*Cuenta no verificada</h2>');
+                              break;
+                            case "passwordIncorrecta":
+                              $('.alerta-login').html('<h2 class="alert alert-danger">*Contraseña incorrecta</h2>');
+                              break;
+                            default:
+                              $('.alerta-login').html('<h2 class="alert alert-danger">*Este correo no esta registrado</h2>');
+                              break;
+                          }
+                        /* $("#hope").addClass("d-none");
                         if (response == "Existe") {
                             $("#alertas").removeClass("alert-success");
                             $("#alertas").addClass("alert-danger");
@@ -89,7 +106,7 @@ $(document).ready(function () {
                                 $("#alertas").slideUp("slow");
                             }, 3000);
                         }
-                        $("#btnSubmit").attr("disabled", false);
+                        $("#btnSubmit").attr("disabled", false); */
                     }
                 });
             } else {

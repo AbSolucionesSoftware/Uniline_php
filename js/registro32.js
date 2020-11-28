@@ -278,6 +278,7 @@ $(document).ready(function() {
 					data: $('#registro').serialize(),
 
 					success: function(response) {
+
 						$('#hope').addClass('d-none');
 						if (response == 'Existe') {
 							$('#alertas').removeClass('alert-success');
@@ -296,7 +297,8 @@ $(document).ready(function() {
 								$('#alertas').slideUp('slow');
 							}, 3000);
 						} else {
-							$('#registro').trigger('reset');
+							window.location.replace('../views/misCursos.php');
+							/* $('#registro').trigger('reset');
 							location.href = 'info_correo.php';
 							$('#alertas').removeClass('alert-danger');
 							$('#alertas').addClass('alert-success');
@@ -306,7 +308,7 @@ $(document).ready(function() {
 							$('#alertas').slideDown('slow');
 							setTimeout(function() {
 								$('#alertas').slideUp('slow');
-							}, 3000);
+							}, 3000); */
 						}
 						$('#btnSubmit').attr('disabled', false);
 					}
