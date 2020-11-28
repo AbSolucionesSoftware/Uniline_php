@@ -62,6 +62,10 @@ max-width: 25%;
   height: 100%; 
   background-color: rgb(250, 250, 250);
 }
+.container-custom{
+  margin-right: 20px!important;
+  margin-left: 20px!important;
+}
 }
 /*iPhone X?*/
 @media (min-width: 375px) {
@@ -98,6 +102,10 @@ max-width: 25%;
   background-color: rgb(250, 250, 250);;
 
 }
+.container-custom{
+  margin-right: 20px!important;
+  margin-left: 20px!important;
+}
 }
 /*iPhone 6 Plus*/
 @media (min-width: 377px) {
@@ -125,6 +133,10 @@ max-width: 25%;
   top:0px; 
   height: 100%; 
   background-color: rgb(250, 250, 250);;
+}
+.container-custom{
+  margin-right: 20px!important;
+  margin-left: 20px!important;
 }
 }
 /*md*/
@@ -158,6 +170,13 @@ max-width: 25%;
 -moz-box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
 box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
 }
+.container-custom{
+  margin-right: 20px!important;
+  margin-left: 20px!important;
+}
+/* .contenedor-boton-compra{
+  padding: 0!important;
+} */
 }
 /*lg*/
 @media (min-width: 992px) {
@@ -197,6 +216,7 @@ box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
 box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
 }
+
 }
 /*xl*/
 @media (min-width: 1448px) {
@@ -342,6 +362,10 @@ background-color: rgb(28, 28, 37);
  position: sticky;
  top: 4rem;
 }
+.sticky-descripcion{
+ position: sticky!important;
+ top: 6rem;
+}
 .calificaciones{
   width: 2.5rem;
   padding: .5rem;
@@ -418,7 +442,26 @@ background-color: rgb(28, 28, 37);
   }
   .boton-compra{
       background: #eaebec;
+      width: 100%;
+      height: 100%;
+      margin: 0!important;
 
+  }
+  .descripcion-curso-boton{
+    width: 100%;
+  }
+  /* .bgcolor-card-curso{
+    background-color: rgb(245, 245, 245);
+  } */
+  .container-custom{
+    margin-right: 90px!important;
+    margin-left: 90px!important;
+  }
+  @media(max-width: 768px){
+    .container-custom{
+      margin-right:20px!important;
+      margin-left: 20px!important;
+    }
   }
   .div-precio{
     background: #eaebec;
@@ -489,11 +532,17 @@ a:focus{
 .bg-color-desabilitado{
   background-color: rgba(165, 165, 165, 0.438)!important;
 } 
+.row-width{
+  max-width: 100%!important;
+}
 .item
 {
-    position: relative;
-    display: inline-block;
+    /* position: relative;
+    display: inline-block; */
     transition: all 0.2s ease;
+    -webkit-box-shadow: 0px 0px 38px -10px rgba(153,153,153,1);
+-moz-box-shadow: 0px 0px 38px -10px rgba(153,153,153,1);
+box-shadow: 0px 0px 38px -10px rgba(153,153,153,1);
 }
 
 .item:hover

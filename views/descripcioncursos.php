@@ -43,7 +43,7 @@ $pagina = "general";
                 <div id="imagen-curso" class="col-12 col-lg-3">
                     <!-- imagen del curso -->
                 </div>
-                <div class="col-12 col-lg-9 flex align-items-center">
+                <div class="col-12 col-lg-9 d-flex align-items-center">
                     <div class="col">
                         <div id="titulo-curso" class="titulo-curso col-12 col-lg-12">
                             <!-- titulo del curso -->
@@ -57,8 +57,8 @@ $pagina = "general";
         </div>
     </div>
     <div class="contenido-informacion">
-        <div class="row">
-            <div class="d-sm-block d-lg-flex mx-lg-5">
+        <div class="row mx-lg-5 mw-100 mx-auto">
+            <!-- <div class="d-sm-block d-lg-flex mx-lg-5"> -->
                 <div class="detalles-curso col-12 col-lg-3 pt-3 px-5">
                     <div class="sticky">
                         <div id="informacion-curso">
@@ -99,7 +99,7 @@ $pagina = "general";
                         </ul>
                     </div>
                 </div>
-            </div>
+         <!--    </div> -->
         </div>
     </div>
 

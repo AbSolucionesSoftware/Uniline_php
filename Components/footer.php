@@ -1,7 +1,7 @@
 <!-- start footer Area -->
 <footer class="footer-area footer-ipad-pro">
     <div class="align-items-center justify-content-between">
-      <div class="row">
+      <div class="row mw-100">
         <div class="col-lg-4 col-sm-12 text-center mt-3 mb-4">
           <a class="" href="mainpage.php"><img src="../img/uniline2.png" width="25%" alt="" title="" /></a>
         </div>

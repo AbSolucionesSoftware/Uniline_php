@@ -116,8 +116,8 @@ $pagina = "mainpage";
 
   <!-- Popular -->
 
-  <div id="all-cursos" class="popular">
-    <div class="container">
+  <div id="all-cursos" class=" mt-5">
+    <div class="container-custom">
       <div class="text-center">
         <p class="h1" style="font-weight: bold;">Nuestros cursos</p>
       </div>

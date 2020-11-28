@@ -135,8 +135,10 @@ $(document).ready(function() {
                             <div class="contenido-maestro">
                                 <h4 class="pt-5">Curso impartido por:</h2>
                                 <div class="maestro row">
-                                    <div class="col-3">
-                                        <img src="${url_2}" alt="profesor" style="border-radius: 100%;">
+                                    <div class="col-3 d-flex align-items-center">
+										<div>
+											<img src="${url_2}" alt="profesor" width="70px"; height="70px"; class="img-circle">
+										</div>
                                     </div>
                                     <div class="col-8 flex align-items-center">
                                         <div>
