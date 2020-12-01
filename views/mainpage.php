@@ -236,7 +236,7 @@ $pagina = "mainpage";
 <!--   <script async src="../js/popper.js"></script> -->
   <!-- #Scripts -->
 
-  <script src="../js/registro32.js"></script>
+  <script src="../js/registro35.js"></script>
   <script src="../js/login9.js"></script>
 
 </body>
